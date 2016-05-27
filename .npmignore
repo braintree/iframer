@@ -1,0 +1,7 @@
+test/
+config/
+.travis.yml
+.eslintrc
+.eslintignore
+.nvmrc
+.npmignore
