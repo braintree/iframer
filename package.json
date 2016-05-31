@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A utility to consistently create iframes",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start config/karma.js --single-run"
   },
