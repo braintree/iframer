@@ -1,14 +1,14 @@
-iFramer
+iframer
 =======
 
-A utility to allow consistent iFrame creation.
+A utility to allow consistent iframe creation.
 
 ## Example
 
 ```javascript
-var iFramer = require('iframer');
+var iframer = require('iframer');
 
-var myIframe = iFramer({
+var myIframe = iframer({
   name: 'braintree-dropin-iframe',
   style: 'z-index: 999',
   width: '100%',
