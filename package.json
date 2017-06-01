@@ -1,5 +1,5 @@
 {
-  "name": "iframer",
+  "name": "@braintree/iframer",
   "version": "1.0.2",
   "description": "A utility to consistently create iframes",
   "main": "index.js",
