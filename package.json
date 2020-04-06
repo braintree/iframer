@@ -2,7 +2,7 @@
   "name": "@braintree/iframer",
   "version": "1.0.3",
   "description": "A utility to consistently create iframes",
-  "main": "index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "prebuild": "prettier --write .",
