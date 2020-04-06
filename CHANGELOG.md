@@ -1,5 +1,4 @@
-CHANGELOG
-=========
+# CHANGELOG
 
 ## 1.0.3
 

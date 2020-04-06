@@ -1,9 +1,7 @@
-'use strict';
+export default function setAttributes(element, attributes): void {
+  let value;
 
-module.exports = function setAttributes(element, attributes) {
-  var value;
-
-  for (var key in attributes) {
+  for (const key in attributes) {
     if (attributes.hasOwnProperty(key)) {
       value = attributes[key];
 
@@ -14,4 +12,4 @@ module.exports = function setAttributes(element, attributes) {
       }
     }
   }
-};
+}
