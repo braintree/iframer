@@ -2,7 +2,10 @@ import setAttributes from "./lib/set-attributes";
 import defaultAttributes from "./lib/default-attributes";
 import assign from "./lib/assign";
 
-export = function createFrame(options?): HTMLIFrameElement {
+export = function createFrame(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  options?: Record<string, any>
+): HTMLIFrameElement {
   const iframe = document.createElement("iframe");
   const config = assign({}, defaultAttributes, options);
 

@@ -1,4 +1,9 @@
-export default function assign(target, ...objs): Record<string, any> {
+export default function assign(
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  target: Record<string, any>,
+  ...objs
+): // eslint-disable-next-line @typescript-eslint/no-explicit-any
+Record<string, any> {
   objs.forEach(function (obj) {
     if (typeof obj !== "object") {
       return;
