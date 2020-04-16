@@ -1,5 +1,8 @@
-CHANGELOG
-=========
+# unreleased
+
+- Add typescript types
+
+# CHANGELOG
 
 ## 1.0.3
 
