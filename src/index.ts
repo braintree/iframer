@@ -3,8 +3,7 @@ import defaultAttributes from "./lib/default-attributes";
 import assign from "./lib/assign";
 
 export = function createFrame(
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  options?: Record<string, any>
+  options: Record<string, unknown> = {}
 ): HTMLIFrameElement {
   const iframe = document.createElement("iframe");
   const config = assign({}, defaultAttributes, options);
