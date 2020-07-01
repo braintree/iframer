@@ -1,6 +1,6 @@
-import setAttributes from "./lib/set-attributes";
-import defaultAttributes from "./lib/default-attributes";
-import assign from "./lib/assign";
+import { setAttributes } from "./lib/set-attributes";
+import { defaultAttributes } from "./lib/default-attributes";
+import { assign } from "./lib/assign";
 
 export = function createFrame(
   options: Record<string, unknown> = {}

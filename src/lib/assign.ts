@@ -1,4 +1,4 @@
-export default function assign(
+export function assign(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   target: Record<string, any>,
   ...objs: Record<string, unknown>[]

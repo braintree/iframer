@@ -1,4 +1,4 @@
-import setAttributes from "../lib/set-attributes";
+import { setAttributes } from "../lib/set-attributes";
 
 describe("setAttributes", () => {
   let testContext;
