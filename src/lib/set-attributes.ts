@@ -1,4 +1,4 @@
-export default function setAttributes(
+export function setAttributes(
   element: HTMLElement,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   attributes: Record<string, any>
