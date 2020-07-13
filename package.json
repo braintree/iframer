@@ -27,11 +27,6 @@
     "typescript": "^3.8.3"
   },
   "jest": {
-    "preset": "ts-jest",
-    "globals": {
-      "ts-jest": {
-        "tsConfig": "src/__tests__/tsconfig.test.json"
-      }
-    }
+    "preset": "ts-jest"
   }
 }
