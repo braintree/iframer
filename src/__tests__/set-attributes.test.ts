@@ -1,5 +1,4 @@
 import { setAttributes } from "../lib/set-attributes";
-import { mocked } from "ts-jest/utils";
 
 describe("setAttributes", () => {
   let el: HTMLElement;
@@ -54,8 +53,8 @@ describe("setAttributes", () => {
       foo: "123",
       bar: "456",
     });
-    mocked(el.setAttribute).mockClear();
-    mocked(el.removeAttribute).mockClear();
+    jest.mocked(el.setAttribute).mockClear();
+    jest.mocked(el.removeAttribute).mockClear();
 
     setAttributes(el, { bar: undefined }); // eslint-disable-line no-undefined
 
