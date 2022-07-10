@@ -1,29 +1,35 @@
 {
-  "name": "iframer",
-  "version": "1.0.1",
+  "name": "@braintree/iframer",
+  "version": "1.1.0",
   "description": "A utility to consistently create iframes",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start config/karma.js --single-run"
+    "prepublishOnly": "npm run build",
+    "prebuild": "prettier --write .",
+    "build": "tsc --declaration",
+    "lint": "eslint --ext js,ts .",
+    "posttest": "npm run lint",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:braintree/iframer.git"
   },
   "devDependencies": {
-    "browserify": "^9.0.8",
-    "chai": "^2.2.0",
-    "gulp": "^3.8.11",
-    "karma": "^0.12.31",
-    "karma-browserify": "^4.1.2",
-    "karma-chai": "^0.1.0",
-    "karma-chai-sinon": "^0.1.4",
-    "karma-mocha": "^1.1.1",
-    "karma-phantomjs-launcher": "^1.0.0",
-    "phantomjs-prebuilt": "^2.1.7",
-    "mocha": "^3.0.0",
-    "sinon": "^1.14.1",
-    "sinon-chai": "^2.7.0"
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "eslint": "^8.13.0",
+    "eslint-config-braintree": "^6.0.0-typescript-prep-rc.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "preset": "ts-jest"
   }
 }
