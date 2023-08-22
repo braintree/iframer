@@ -53,7 +53,7 @@ describe("iframer", () => {
       });
 
       expect(result.getAttribute("style")).toBe(
-        "background: tomato; transition: color 100ms;"
+        "background: tomato; transition: color 100ms;",
       );
     });
 

@@ -3,7 +3,7 @@ import { defaultAttributes } from "./lib/default-attributes";
 import { assign } from "./lib/assign";
 
 export = function createFrame(
-  options: Record<string, unknown> = {}
+  options: Record<string, unknown> = {},
 ): HTMLIFrameElement {
   const iframe = document.createElement("iframe");
   const config = assign({}, defaultAttributes, options);
