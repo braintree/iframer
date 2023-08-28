@@ -1,5 +1,15 @@
 # CHANGELOG
 
+# Unreleased
+
+- Update to node v18
+
+- Dev Dependency Updates
+  - Update to TypeScript 5
+  - Update prettier to next major version
+  - Update eslint-plugin-prettier to next major version
+  - Other minor dependency updates
+
 # 1.1.0
 
 - Add typescript types
