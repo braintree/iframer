@@ -1,5 +1,9 @@
 # CHANGELOG
 
+# UNRELEASED
+
+- Update braces to 3.0.3
+
 # 2.0.0
 
 - Update to node v18
