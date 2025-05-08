@@ -1,6 +1,17 @@
 # CHANGELOG
 
-# 2.0.1
+## UNRELEASED
+- Update (sub-)dependencies
+  - @babel/parser
+  - @babel/template
+  - @babel/types  
+  - @babel/code-frame
+  - @babel/helper-validator-identifier
+  - @babel/helper-string-parser
+  - @babel/highlight
+  - @babel/template
+
+## 2.0.1
 
 - Update (sub-)dependencies
   - `cross-spawn` to 7.0.6
@@ -8,7 +19,7 @@
   - `ws` to 8.18.0
 - Update `braces` to 3.0.3
 
-# 2.0.0
+## 2.0.0
 
 - Update to node v18
 
@@ -18,7 +29,7 @@
   - Update eslint-plugin-prettier to next major version
   - Other minor dependency updates
 
-# 1.1.0
+## 1.1.0
 
 - Add typescript types
 
