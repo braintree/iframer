@@ -11,13 +11,13 @@ describe("setAttributes", () => {
 
   it("can accept an empty object", () => {
     setAttributes(el, {});
-    expect(el.setAttribute).not.toBeCalled();
+    expect(el.setAttribute).not.toHaveBeenCalled();
   });
 
   it("can accept an object with one property", () => {
     setAttributes(el, { foo: "123" });
-    expect(el.setAttribute).toBeCalledTimes(1);
-    expect(el.setAttribute).toBeCalledWith("foo", "123");
+    expect(el.setAttribute).toHaveBeenCalledTimes(1);
+    expect(el.setAttribute).toHaveBeenCalledWith("foo", "123");
   });
 
   it("can accept an object with many properties", () => {
@@ -25,9 +25,9 @@ describe("setAttributes", () => {
       foo: "123",
       bar: "456",
     });
-    expect(el.setAttribute).toBeCalledTimes(2);
-    expect(el.setAttribute).toBeCalledWith("foo", "123");
-    expect(el.setAttribute).toBeCalledWith("bar", "456");
+    expect(el.setAttribute).toHaveBeenCalledTimes(2);
+    expect(el.setAttribute).toHaveBeenCalledWith("foo", "123");
+    expect(el.setAttribute).toHaveBeenCalledWith("bar", "456");
   });
 
   it("ignores attributes that are undefined", () => {
@@ -35,8 +35,8 @@ describe("setAttributes", () => {
       foo: "123",
       bar: undefined, // eslint-disable-line no-undefined
     });
-    expect(el.setAttribute).toBeCalledTimes(1);
-    expect(el.setAttribute).toBeCalledWith("foo", "123");
+    expect(el.setAttribute).toHaveBeenCalledTimes(1);
+    expect(el.setAttribute).toHaveBeenCalledWith("foo", "123");
   });
 
   it("ignores attributes that are null", () => {
@@ -44,8 +44,8 @@ describe("setAttributes", () => {
       foo: "123",
       bar: null,
     });
-    expect(el.setAttribute).toBeCalledTimes(1);
-    expect(el.setAttribute).toBeCalledWith("foo", "123");
+    expect(el.setAttribute).toHaveBeenCalledTimes(1);
+    expect(el.setAttribute).toHaveBeenCalledWith("foo", "123");
   });
 
   it("deletes attributes that are undefined", () => {
@@ -59,8 +59,8 @@ describe("setAttributes", () => {
     setAttributes(el, { bar: undefined }); // eslint-disable-line no-undefined
 
     expect(el.getAttribute("foo")).toEqual("123");
-    expect(el.removeAttribute).toBeCalledTimes(1);
-    expect(el.removeAttribute).toBeCalledWith("bar");
+    expect(el.removeAttribute).toHaveBeenCalledTimes(1);
+    expect(el.removeAttribute).toHaveBeenCalledWith("bar");
   });
 
   it("deletes attributes that are null", () => {
@@ -72,7 +72,7 @@ describe("setAttributes", () => {
     setAttributes(el, { bar: null });
 
     expect(el.getAttribute("foo")).toEqual("123");
-    expect(el.removeAttribute).toBeCalledTimes(1);
-    expect(el.removeAttribute).toBeCalledWith("bar");
+    expect(el.removeAttribute).toHaveBeenCalledTimes(1);
+    expect(el.removeAttribute).toHaveBeenCalledWith("bar");
   });
 });
