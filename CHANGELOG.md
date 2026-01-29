@@ -1,6 +1,6 @@
 # CHANGELOG
 
-# UNRELEASED
+## 2.0.2
 
 - Update (sub-)dependencies
   - @types/jest to 30.0.0
@@ -12,7 +12,7 @@
   - typescript to 5.9.3
 - Update Node to v24
 
-# 2.0.1
+## 2.0.1
 
 - Update (sub-)dependencies
   - `cross-spawn` to 7.0.6
@@ -20,7 +20,7 @@
   - `ws` to 8.18.0
 - Update `braces` to 3.0.3
 
-# 2.0.0
+## 2.0.0
 
 - Update to node v18
 
@@ -30,7 +30,7 @@
   - Update eslint-plugin-prettier to next major version
   - Other minor dependency updates
 
-# 1.1.0
+## 1.1.0
 
 - Add typescript types
 
