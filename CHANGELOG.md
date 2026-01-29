@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.3
+
+- Add @types/node 24.0.0
+
 ## 2.0.2
 
 - Update (sub-)dependencies
