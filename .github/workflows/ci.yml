@@ -1,17 +1,17 @@
-name: "Unit Tests"
+name: "CI"
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - "*"
+
+permissions:
+  contents: read
 
 jobs:
-  build:
-    name: "Unit Tests on Ubuntu"
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: "18.x"
-      - run: npm install
-      - run: npm test
+  ci:
+    uses: braintree/web-sdk-github-actions/.github/workflows/ci.yml@17a3922575160e8e3ffdb7ecc76c6a3dbfd6a50a
